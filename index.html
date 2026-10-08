@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#10090e">
+    <title>Una sorpresa para vos 💗</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+  </head>
+  <body>
+    <div class="controls">
+      <button class="small" id="sound" aria-pressed="true">♫ Sonido activado</button>
+    </div>
+    <canvas id="confetti" aria-hidden="true">
+    </canvas>
+    <div class="flash">
+    </div>
+    <main>
+      <!-- PORTADA: editá aquí los textos que aparecen antes de abrir. -->
+      <section class="intro">
+        <div class="eyebrow">Un momento especial</div>
+        <h1>Hay una sorpresa para vos</h1>
+        <p>Un poquito de magia… y mucho cariño.</p>
+        <button class="gift" id="gift" aria-label="Abrir tu regalo">
+          <span class="light">
+          </span>
+          <span class="box">
+          </span>
+          <span class="lid">
+            <span class="bow">
+            </span>
+          </span>
+        </button>
+        <div class="shadow">
+        </div>
+        <p class="hint">Tocá el regalo para descubrirlo 💗</p>
+      </section>
+      <!-- REGALO: reemplazá IMG/regalo.jpg por tu imagen. -->
+      <section class="reveal" aria-live="polite">
+        <h1 id="finalTitle" tabindex="-1">¡Feliz Día de la Madre! 💗</h1>
+        <img src="IMG/regalo.jpg" alt="Tarjeta del Día de la Madre: Este mimo es para vos. Porque te amamos. Vouchers y kits de limpieza facial.">
+        <button class="small" id="again">↻ Volver a abrir</button>
+        <a class="small" id="download" download="regalo-dia-de-la-madre.jpg">Guardar imagen</a>
+        <div class="footer">Un regalo para disfrutar y sentirte bien.</div>
+      </section>
+    </main>
+    <script src="js/regalo.js" defer>
+    </script>
+  </body>
+</html>
